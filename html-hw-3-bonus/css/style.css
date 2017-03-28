@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	
+	clear: both;
+	background: #010101;
+	
+  
+}
+.header{
+	position: relative;
+	width: 980px;
+	margin: 0;
+
+}
+.wrapper{
+	
+	background: url(../img/bg.jpg ) fixed no-repeat;
+	background-position: center;
+	margin: 0;
+	
+}
+.logo{
+	margin-left: 200px;
+	float: left;
+	padding: 0px;
+	width: 266px;
+	height: 143px;
+	
+}
+.contacts{
+	float: right;
+	color: white;
+	width: auto;
+	position: relative; 
+    padding-top: 90px;
+    box-sizing: border-box;
+}
+
+.contacts span{
+	font-weight: bold;
+}
+
+.foto{
+	clear: both;
+	width: 860px;
+	margin: 0 auto;
+}
+
+.foto li{
+	float: left;
+	width: 280px;
+	padding: 10px 5px 0 0;
+	list-style-type: none;
+	display:inline-block;
+	
+}
+.foto p{
+	color:white;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+footer{
+	clear: both;
+	margin-top: 50px;
+}
+
+footer p{
+	color:white;
+	text-align: center;
+}

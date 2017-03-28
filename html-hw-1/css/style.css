@@ -1,0 +1,57 @@
+body{
+	background: #f4f3f7;
+}
+p{
+/*padding-left: 20px; 	*/
+}
+
+.body{
+	background: #f4f3f7;
+	width: 550px; 
+    padding: 10px; 
+    margin: auto; 
+	}
+.name{
+	text-align:center;
+	font-size: 36px;
+	}
+.foto{
+	height: 200px;
+	width: 200px;
+	text-align: center;
+	border:  2px  solid #8f8f8f;	
+	}
+.bloc_foto{
+	text-align: center;
+	
+}
+.bloc_foto p{
+text-align: left;
+font-weight: bold;
+}
+
+
+	
+.study{
+		
+		
+}
+	
+.contacts span{
+	padding-left: 30px;	
+}
+.soc{
+	margin-left: 30px;	
+	
+}
+.soc img{
+	border: solid 1px #8f8f8f;	
+}
+	
+.feedback span{
+	padding-left: 20px;
+}
+.pname{
+font-weight: bold;
+	
+}
