@@ -33,10 +33,11 @@ min-height: 100vh;
 }
 .logo{
 	float: left;
-	margin: 8px 0 0 30px;
+	margin: 7px 0 0 30px;
 	width: 283px;
 	height: 163px;
 	background-image:url(../img/logo.png);
+	/* z-index: 1; */
 }
 .contacts{
 	float: right;
@@ -59,9 +60,10 @@ min-height: 100vh;
 
 .contries{
 	position: relative;
-	margin: -70px  0 0  0px;
+	/* margin: -70px  0 0  0px; */
+	padding-top: 15px;
 	float: right;
-	clear: both;
+	clear: right;
 }
 .contries-ul{
 	/* clear:both; */
@@ -83,6 +85,7 @@ min-height: 100vh;
 }
 .slider {
 	border-top: 1px solid #128aa7;
+	/* z-index: 3; */
 }
 
 .horizontal{
