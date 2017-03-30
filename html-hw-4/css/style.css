@@ -7,9 +7,7 @@
 ul, li {
 	list-style: none;
 }
-body{
-	background: #0d7aa3;
-}
+
 
 .wrapper{
 background: #1289a7;
@@ -44,7 +42,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1289a7', end
 	margin-top: 10px;
 	padding-right: 30px;
 	color: #128aa7;
-	/* clear: left; */
+
 }
 .contacts p{
 	font-size: 16px;
@@ -143,6 +141,7 @@ ul.menu_horizontal li:hover > .submenu{
 .container-content{
 	overflow: hidden;
 	width: 1000px;
+	display: flex;
 }
 .submenu li:hover{
 	display: block;
@@ -150,41 +149,27 @@ ul.menu_horizontal li:hover > .submenu{
 	width: 170px;
 }
 
-.slidebar-l{
-	float: left;
-	width: 19%;
-	background: #A4A3A3;
-	padding-bottom: 20000px;
-	padding-left: 15px;
-	margin-bottom: -20000px;
-}
+.slidebar-l,
 .slidebar-r{
-	float: right;
-	width: 19%;
+	width: 23%;
 	background: #A4A3A3;
-	padding-bottom: 20000px;
-	padding-left: 15px;
-	margin-bottom: -20000px;
-}
-.slidebar-r p{
-	padding-bottom:15px
 }
 
+.slidebar-r p,
 .slidebar-l p{
-	padding-bottom:15px
-
+	padding-bottom:15px;
+	padding-left: 10px;
 }
+
+
 .content{
-	margin: 0 auto;
-	width: 56%;
-	padding-bottom: 20000px;
-	padding-top: 10px;
-	margin-bottom: -20000px;
+	width: 54%;
+	padding: 10px;
 }
 
 .column-l, .column-r {
-	text-align: center;
 	padding: 5px;
+	text-align: center;
 }
 
 .page-footer{
