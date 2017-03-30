@@ -12,7 +12,11 @@ body{
 }
 
 .wrapper{
-	background:url(../img/background_2.jpg) repeat-x;
+background: #1289a7;
+background: -moz-linear-gradient(top, #1289a7 0%, #1289a7 3%, #5ef0ff 3%, #10cde1 3%, #13cde2 3%, #21d0e3 4%, #41d7e6 6%, #76e2ee 9%, #b3f0f5 12%, #d2f5f9 14%, #f1fdfd 16%, #ffffff 17%, #41c7d3 17%, #34b7cb 22%, #33b6c8 22%, #2bafc4 24%, #28aac0 25%, #27abc2 25%, #24a8bf 25%, #22a4be 26%, #1b9db7 28%, #1c9dba 28%, #1697b4 29%, #1697b6 30%, #1091b0 32%, #1291b2 33%, #0f90b0 35%, #1091b0 38%, #108cae 43%, #108cae 48%, #0e89aa 52%, #1086aa 60%, #0e85a7 61%, #0d7fa4 71%, #0d7ea6 75%, #0d7da3 75%, #0d7da5 77%, #0c7ca2 78%, #0e7ba4 81%, #0d78a2 82%, #0c739e 100%);
+background: -webkit-linear-gradient(top, #1289a7 0%,#1289a7 3%,#5ef0ff 3%,#10cde1 3%,#13cde2 3%,#21d0e3 4%,#41d7e6 6%,#76e2ee 9%,#b3f0f5 12%,#d2f5f9 14%,#f1fdfd 16%,#ffffff 17%,#41c7d3 17%,#34b7cb 22%,#33b6c8 22%,#2bafc4 24%,#28aac0 25%,#27abc2 25%,#24a8bf 25%,#22a4be 26%,#1b9db7 28%,#1c9dba 28%,#1697b4 29%,#1697b6 30%,#1091b0 32%,#1291b2 33%,#0f90b0 35%,#1091b0 38%,#108cae 43%,#108cae 48%,#0e89aa 52%,#1086aa 60%,#0e85a7 61%,#0d7fa4 71%,#0d7ea6 75%,#0d7da3 75%,#0d7da5 77%,#0c7ca2 78%,#0e7ba4 81%,#0d78a2 82%,#0c739e 100%);
+background: linear-gradient(to bottom, #1289a7 0%,#1289a7 3%,#5ef0ff 3%,#10cde1 3%,#13cde2 3%,#21d0e3 4%,#41d7e6 6%,#76e2ee 9%,#b3f0f5 12%,#d2f5f9 14%,#f1fdfd 16%,#ffffff 17%,#41c7d3 17%,#34b7cb 22%,#33b6c8 22%,#2bafc4 24%,#28aac0 25%,#27abc2 25%,#24a8bf 25%,#22a4be 26%,#1b9db7 28%,#1c9dba 28%,#1697b4 29%,#1697b6 30%,#1091b0 32%,#1291b2 33%,#0f90b0 35%,#1091b0 38%,#108cae 43%,#108cae 48%,#0e89aa 52%,#1086aa 60%,#0e85a7 61%,#0d7fa4 71%,#0d7ea6 75%,#0d7da3 75%,#0d7da5 77%,#0c7ca2 78%,#0e7ba4 81%,#0d78a2 82%,#0c739e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1289a7', endColorstr='#0c739e',GradientType=0 );
 }
 .container{
 	margin: 0 auto;
@@ -22,16 +26,17 @@ body{
 }
 .clearfix:after{
 	visibility: hidden;
-    display: block;
-    content: "";
-    clear: both;
-    height: 0;
-	
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
 }
 .logo{
 	float: left;
-	margin: 7px 0 0 30px;
-	
+	margin: 8px 0 0 30px;
+	width: 283px;
+	height: 163px;
+	background-image:url(../img/logo.png);
 }
 .contacts{
 	float: right;
@@ -39,6 +44,7 @@ body{
 	margin-top: 10px;
 	padding-right: 30px;
 	color: #128aa7;
+	/* clear: left; */
 }
 .contacts p{
 	font-size: 16px;
@@ -53,11 +59,12 @@ body{
 
 .contries{
 	position: relative;
-	margin: 110px -180px 0  0px;
+	margin: -70px  0 0  0px;
 	float: right;
+	clear: both;
 }
 .contries-ul{
-	clear:both;
+	/* clear:both; */
 	padding-right: 20px;
 }
 .contries-ul li{	
@@ -71,8 +78,8 @@ body{
 	text-align-last: center;
 	font-size: 10px;
 }
-.hw4{
-	height: 175px;
+.pages-header{
+	height: 170px;
 }
 .slider {
 	border-top: 1px solid #128aa7;
@@ -80,12 +87,13 @@ body{
 
 .horizontal{
 	background: #373737;
-	background: linear-gradient(to top, #b5bdc8 0%, #303030 10%, #333333 60%);
-	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	background: linear-gradient(to top, #b5bdc8 0%, #303030 1%, #333333 60%);
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.6);
 	margin: -4px 0 0px 0px;
 	padding: 0 0 0 50px;
 	height: 30px;
 	border-top: 1px solid #138aa7;
+	position: relative;
 }
 
 .menu_horizontal a {
@@ -140,8 +148,6 @@ ul.menu_horizontal li:hover > .submenu{
 	display: block;
 	background: #828282;
 	width: 170px;
-	
-
 }
 
 .slidebar-l{
@@ -181,23 +187,20 @@ ul.menu_horizontal li:hover > .submenu{
 	padding: 5px;
 }
 
-.fhw{
+.page-footer{
 	height: 35px;
 }
-.fhw p{
+.page-footer p{
 	text-align: center;
 	color: white;
 	padding-top: 10px
 }
 .trigon::after{
-
-	content: ''; 
-    position: relative; 
-    right: 15px; 
-    bottom: 17px;
-    border: 5px solid transparent; 
-    border-top: 5px solid white;
-    float:right;
-    margin-bottom:-10px;
-
+	content: '';
+	position: relative;
+	right: -6px;
+	bottom: -12px;
+	border: 5px solid transparent;
+	border-top: 5px solid white;
+	float:right;
 }
