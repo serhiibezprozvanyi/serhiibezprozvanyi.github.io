@@ -1,34 +1,30 @@
 *{
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 }
 
-.conpani{
-	order: 4;
-}
-.company{
-	display:flex;
-	list-style-type:none;
-}
+
 .wrapper{
 	width: 917px;
+	margin: auto;
 }
 .ul-munu{
 	list-style-type: none;
+	margin: auto;
 }
 
 .header{
 	display: flex;
 	align-items: center;
-	height: 56px;
+	padding: 13px 0 13px 0;
 }
 fieldset{
 	border:0px;
 }
 
-.korzina::before{
+.cart::before{
 	content: "";
-	background:url(../img/korzina.png);
+	background:url(../img/cart.png);
 	background-repeat: no-repeat;
 	padding: 0px 0px 0px 40px;
 	width:21px;
@@ -36,11 +32,11 @@ fieldset{
 	color:white;
 	line-height: 30px;
 }
-.korzina span{
+.cart span{
 	color:white;
 	margin: 0 4px 0 -10px;
 }
-.korzina a{
+.cart a{
 	text-decoration:none;
 	color:#0d5a8f;
 }
@@ -49,6 +45,7 @@ fieldset{
 	width: 493px;
 	height: 25px;
 	border-radius: 5px;
+	margin: auto;
 }
 .fa-o{
 	color: white;
@@ -187,6 +184,12 @@ fieldset{
 .forms a{
 	color: white;
 	text-decoration: none;
+    padding-left: 8px;
+    padding-right: 12px;
+}
+
+.forms li {
+	padding-left: 5px;
 }
 .pass a{
 	text-decoration:underline;
@@ -202,6 +205,7 @@ fieldset{
 	padding: 2px 0 3px 21px;
 	width:14px;
 	height:18px;
+	margin-left: 5px;
 } 
 .product-list{
 	display: flex;
@@ -210,14 +214,14 @@ fieldset{
 	background: linear-gradient(to top, #93a7b0, #e4e7e8);
 	border-radius: 5px;
 }
-.tovar{
+.product{
 	padding: 5px;
   width: 145px;
   height: 185px;
   margin-top: 10px;
+	text-align: center;
 }
-.tovar-name{
-	margin-left: 30px;
+.product-name{
 	text-decoration: none;
     color: #206988;
 }
@@ -231,7 +235,7 @@ fieldset{
 	font-style: italic;
 }
 
-.tovar-model{
+.product-model{
 	text-align:center;
 }
 .blok-menu-header{
@@ -321,7 +325,7 @@ fieldset{
 .icon-catalog{
 	   
 }
-.catalog-name p{
+.catalog-name section{
 	 background-image: url(../img/catalog.png);
 	 background-repeat: no-repeat;
 	 padding: 4px 0px 5px 27px;
@@ -341,4 +345,14 @@ fieldset{
 }
 .butto:hover{
 	opacity: 0.9;
+}
+.conpani{
+	order: 4;
+}
+.company{
+	display:flex;
+	list-style-type:none;
+}
+.company li{
+	margin: auto;
 }
