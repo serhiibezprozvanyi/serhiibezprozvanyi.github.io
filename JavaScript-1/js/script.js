@@ -58,24 +58,33 @@ pow(prompt("Введите число:", ''), prompt("Введите степе�
 */
 // Добавление пользователей в базу
 var firstName = [];
-var nomberName = prompt("Сколько пользователей добавить в базу:? ", '');
+
+var nomberName = prompt("Сколько имен добавить в базу?:  ", '5');
+//alert(typeof(nomberName));
+//while('number' !== typeof(nomberName)) {
+//	nomberName = +prompt("Ошибка, введите пожалуйста число:? ", '');
+//	alert(typeof(nomberName));
+//}
 
 for (var i =0;i < nomberName; i++){
 	firstName.push(prompt("Введите имя для добавления:", ''));
 }
 
-var searchName = prompt("Введите имя для Поиска:", '');
+//var searchName = prompt("Введите имя для Поиска:", '');
+searchName(prompt("Введите имя для Поиска:", ''));
+function searchName(name) {
+	top:
+	for (var i=0;i < firstName.length ; i++){
+		if (firstName[i].toLowerCase() === name.toLowerCase()){
+			console.log(firstName[i].toUpperCase() +', вы успешно вошли!!!');
+			console.log(i);
 
-console.log(firstName);
-top:
-for (var i=0;i < firstName.length ; i++){
-	if (firstName[i].toLowerCase() === searchName.toLowerCase()){
-		console.log(firstName[i].toUpperCase() +', вы успешно вошли!!!');
-		break;
+		}else if ( i >= firstName.length -1){
+			alert('Пользователя не существует ' + name.toUpperCase());
+		}else{
+			continue top;
+		}
+
+
 	}
-	else if (firstName[i].toLowerCase() !== searchName.toLowerCase()) {
-		alert('Пользователя ' + searchName.toUpperCase() + ' не существует');
-		continue top;
-	
 }
-	}
