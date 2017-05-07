@@ -44,7 +44,7 @@ factorialize(prompt("Факториал часла:", ''));
 function pow(base, exponent) {
 	var summ = 1;
  if (base > 0){	
-	for (var i=0;  exponent > i; i++){
+	for (var i=0;  i < exponent; i++){
 			summ *= base;
 		}
 		console.log(summ);
@@ -60,11 +60,7 @@ pow(prompt("Введите число:", ''), prompt("Введите степе�
 var users = [];
 
 var userCount  = prompt("Сколько имен добавить в базу?:  ", '5');
-//alert(typeof(nomberName));
-//while('number' !== typeof(nomberName)) {
-//	nomberName = +prompt("Ошибка, введите пожалуйста число:? ", '');
-//	alert(typeof(nomberName));
-//}
+
 
 for (var i =0;i < userCount ; i++){
 	users.push(prompt("Введите имя для добавления:", ''));
