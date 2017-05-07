@@ -75,9 +75,11 @@ function searchUser(name) {
 	for (var i=0;i < users.length ; i++){
 		if (users[i].toLowerCase() === name.toLowerCase()){
 			console.log(users[i].toUpperCase() +', вы успешно вошли!!!');
+			return;
 		}
-		alert('Пользователя не существует ' + name.toUpperCase());
-	}	
+		
+	}
 	
+	alert('Пользователя не существует ' + name.toUpperCase());
 
 }
