@@ -24,8 +24,11 @@ function nameTest(){
 	testH1.innerHTML = db.data.title;
 	return testH1;
 }
+var testTopic = nameTest();
+document.body.appendChild(testTopic);
+//document.write(db.data.title);
 
-function testOutput(button) {
+function testOutput() {
 var parent = document.createElement('ul');
 	parent.setAttribute("class", "ulOutput");
 for (var i = 0, count = db.data.questions.length; i < count ;i++){
@@ -49,6 +52,9 @@ function input(){
 	return  inputs;
 }
 
+//var qwe = createButton('textButton');
+//document.body.appendChild(qwe);
+
 function createButton(textButton) {
 	var button = document.createElement('button');
 	button.setAttribute('type','submit');
@@ -57,6 +63,7 @@ function createButton(textButton) {
     button.innerHTML=textButton;
 	return button;
 }
+
 
 function createForm(content){
 	var form = document.createElement('form');
