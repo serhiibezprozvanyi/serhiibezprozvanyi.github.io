@@ -74,6 +74,6 @@ function createForm(content){
 }
 
 var formTest = createForm(testOutput());
-  
+formTest.appendChild(createButton('Отправить'));
 document.body.appendChild(formTest);
  
