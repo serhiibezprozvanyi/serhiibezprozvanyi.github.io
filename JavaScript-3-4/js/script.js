@@ -19,7 +19,7 @@ var db = {
       }
     ]
   },
-	questionsAndAnswers: function createQuestion(questionIndex) {
+	questionsAndAnswers: function (questionIndex) {
   var question = document.createElement('div');
   var ulQ = document.createElement('ul');
   var titleQuestion = document.createElement('h3');
@@ -46,7 +46,7 @@ var db = {
 		
   return question;
 },
- creatingButton:	function createButton(textButton) {
+ creatingButton:	function (textButton) {
 	var button = document.createElement('button');
 	button.setAttribute('type','submit');
 	button.setAttribute("class", "NewButton");
@@ -54,7 +54,7 @@ var db = {
     button.innerHTML=textButton;
 	return button;
 },
-formСreation:  function createForm(){
+formСreation:  function (){
 
     var form = document.createElement('form');
     var title = document.createElement('h1');
@@ -74,7 +74,7 @@ formСreation:  function createForm(){
 },
 	
 };
-var formTest = db.formСreation();
+	var formTest = db.formСreation();
 document.body.appendChild(formTest);
 
 })();
