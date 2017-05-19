@@ -27,7 +27,6 @@ var db = {
     ulQ = document.createElement('ul');
 	titleQuestion.innerHTML = questionIndex.title;
 	question.appendChild(titleQuestion);	
-	
 		
 		for (var s = 0, count = questionIndex.answers.length; s < count ;s++){
 			var list = document.createElement('li');
@@ -36,7 +35,6 @@ var db = {
 			input.setAttribute('type', 'checkbox');
     		input.setAttribute("id", "Newinput");
 			label.appendChild(input);
-//			label.innerHTML = questionIndex.answers[s];
 			label.appendChild(document.createTextNode(questionIndex.answers[s]));
 			list.appendChild(label);
 			
@@ -66,20 +64,17 @@ formСreation:  function createForm(){
 
     title.innerHTML = this.data.title;
     form.appendChild(title);
+	for (var s = 0, count = this.data.questions.length; s < count ;s++){
+		console.log(this.questionsAndAnswers(this.data.questions[s]));
+		form.appendChild(this.questionsAndAnswers(this.data.questions[s]));
+		
+	}
+	form.appendChild(this.creatingButton('Отправить'));
     return form;
-	
- 
-	
 },
 	
-
 };
-	var formTest = db.formСreation();
-var createQ = db.questionsAndAnswers(db.data.questions[1])
-formTest.appendChild(createQ);
-formTest.appendChild(db.creatingButton('Отправить'));
+var formTest = db.formСreation();
 document.body.appendChild(formTest);
-
-
 
 })();
