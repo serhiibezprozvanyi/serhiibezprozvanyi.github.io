@@ -1,3 +1,6 @@
+(function () {
+  'use strict';
+
 var db = {
   data: {
     title: 'Тест по какой-то теме',
@@ -8,72 +11,75 @@ var db = {
       },
       {
         title: 'Вопрос #2',
-        answers: ['Вариант овтета 2.1', 'Вариант овтета 2.2', 'Вариант овтета 2.3', 'Вариант овтета 2.4']
+        answers: ['Вариант овтета 2.1', 'Вариант овтета 2.2', 'Вариант овтета 2.3', 'Вариант овтета 2.4', 'Вариант овтета 2.5']
       },
       {
         title: 'Вопрос #3',
         answers: ['Вариант овтета 3.1', 'Вариант овтета 3.2']
       }
     ]
-  }
-};
+  },
+	questionsAndAnswers: function createQuestion(questionIndex) {
+  var question = document.createElement('div');
+  var ulQ = document.createElement('ul');
+  var titleQuestion = document.createElement('h3');
 
-function nameTest(){
-	var testH1 = document.createElement('h1');
-//	testH1 = setAttribute('class', 'name');
-	testH1.innerHTML = db.data.title;
-	return testH1;
-}
-var testTopic = nameTest();
-document.body.appendChild(testTopic);
-//document.write(db.data.title);
-
-function testOutput() {
-var parent = document.createElement('ul');
-	parent.setAttribute("class", "ulOutput");
-for (var i = 0, count = db.data.questions.length; i < count ;i++){
-  var el = document.createElement('p');
-  el.innerHTML = db.data.questions[i].title;
-  parent.appendChild(el);
-	for (var s = 0, count = db.data.questions[i].answers.length; s < count ;s++){
-		var ell = document.createElement('li');
-		ell.innerHTML = '<input type="checkbox" '+ 'id=' + (i+1 + '-' + (s+1)) +'>' + ' ' +db.data.questions[i].answers[s];
-		parent.appendChild(ell);
-	}
-}
-	return parent;
-}
-
-
-function input(){
-	var inputs = document.createElement('input');
-	inputs.setAttribute('type', 'checkbox');
-	inputs.setAttribute("id", "Newinput");
-	return  inputs;
-}
-
-//var qwe = createButton('textButton');
-//document.body.appendChild(qwe);
-
-function createButton(textButton) {
+    ulQ = document.createElement('ul');
+	titleQuestion.innerHTML = questionIndex.title;
+	question.appendChild(titleQuestion);	
+	
+		
+		for (var s = 0, count = questionIndex.answers.length; s < count ;s++){
+			var list = document.createElement('li');
+			var input = document.createElement('input');
+			var label = document.createElement('label');
+			input.setAttribute('type', 'checkbox');
+    		input.setAttribute("id", "Newinput");
+			label.appendChild(input);
+//			label.innerHTML = questionIndex.answers[s];
+			label.appendChild(document.createTextNode(questionIndex.answers[s]));
+			list.appendChild(label);
+			
+			ulQ.appendChild(list);
+				
+		}
+		
+  question.appendChild(ulQ);
+		
+  return question;
+},
+ creatingButton:	function createButton(textButton) {
 	var button = document.createElement('button');
 	button.setAttribute('type','submit');
 	button.setAttribute("class", "NewButton");
     button.setAttribute("value", "#");
     button.innerHTML=textButton;
 	return button;
-}
+},
+formСreation:  function createForm(){
 
+    var form = document.createElement('form');
+    var title = document.createElement('h1');
+	
+    form.setAttribute('action','#')
+    form.setAttribute('method','POST')
 
-function createForm(content){
-	var form = document.createElement('form');
-	form.setAttribute('action','#')
-	form.setAttribute('method','POST')
-	form.appendChild(content);
-	return form;
-}
-
-var formTest = createForm(testOutput());
-formTest.appendChild(createButton('Отправить'));
-document.body.appendChild(formTest);
+    title.innerHTML = this.data.title;
+    form.appendChild(title);
+    return form;
+	
  
+	
+},
+	
+
+};
+	var formTest = db.formСreation();
+var createQ = db.questionsAndAnswers(db.data.questions[1])
+formTest.appendChild(createQ);
+formTest.appendChild(db.creatingButton('Отправить'));
+document.body.appendChild(formTest);
+
+
+
+})();
