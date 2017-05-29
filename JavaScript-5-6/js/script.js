@@ -58,7 +58,7 @@ function stopTimer() {
 
 function updateTimer(){
 	st.innerHTML=("Старт");
-	pauseDate = start[3] + (start[2]*1000)+ (start[1]*60*1000) + (start[0]*120*1000);
+	pauseDate = start[3] + (start[2]*1000)+ (start[1]*60*1000) + (start[0]*3600*1000);
 	isActive = false;
 	clearInterval(int);
 	return pauseDate;
