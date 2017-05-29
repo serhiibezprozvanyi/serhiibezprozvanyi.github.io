@@ -13,7 +13,7 @@ var p = document.createElement('p');
 p.setAttribute("id", "time");
 p.innerHTML = start.join(':');
 div.appendChild(p);
-return div;
+return document.body.appendChild(div);
 }
 
 function hmtlTimer(){
@@ -39,6 +39,7 @@ function creatingButton(textButton, id) {
 };
 
 var stop = creatingButton("Стоп", "stop");
+var split = creatingButton("split", "split");
 var st = creatingButton("Старт", "start");
 
 
@@ -75,11 +76,16 @@ st.addEventListener('click', function() {
         isActive = false;
 	}  
 });
+
+split.addEventListener('click', function() {
+	html();
+});
 stop.addEventListener('click', function() {
 	stopTimer();
 });
-document.body.appendChild(html());
+
+html();
+//document.body.appendChild(html());
 document.body.appendChild(st);
+document.body.appendChild(split);
 document.body.appendChild(stop);
-
-
