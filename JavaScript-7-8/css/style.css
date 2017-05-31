@@ -1,0 +1,51 @@
+
+.tabs_box {
+    width: 600px;
+    border: 1px solid #000;
+}
+ 
+.tab {
+    padding: 0px 10px;
+   
+ }
+#tab2,#tab3,#tab4{
+  display:none;
+} 
+ 
+.tabs_menu {
+    display: flex;
+    margin: 0px auto;
+    padding: 0;
+}
+ 
+.tabs_menu li {
+    display: flex;
+}
+ 
+.tabs_menu li a {
+    display: block;
+    width: 149px;
+    text-align: center;
+    text-decoration: none;
+    background: #f5f5f5;
+    color: #292929;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 10px 0px;
+}
+ 
+.tabs_menu .active {
+    background: #b1d056;
+
+}
+
+.application{
+  margin-top:10px;
+  width: 200px;;
+}
+
+label{
+display:block;
+width:80px;
+
+}
