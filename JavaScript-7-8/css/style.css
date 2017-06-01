@@ -41,11 +41,27 @@
 
 .application{
   margin-top:10px;
-  width: 200px;;
+  width: 600px;;
 }
 
 label{
 display:block;
 width:80px;
 
+}
+
+.tooltip{
+ display:none;
+ background-color:#dedede;
+ padding:5px;
+ border:1px solid #fff;
+ width:250px;
+}
+
+.tooltip p{
+ margin:0;
+ padding:0;
+ color:#fff;
+ background-color:#222;
+/* padding:2px 7px;*/
 }
