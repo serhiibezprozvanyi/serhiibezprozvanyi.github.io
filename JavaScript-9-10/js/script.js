@@ -2,8 +2,7 @@
 $(function() {
 	"use strict"
     $('.jcarousel').jcarousel({
-		center: true,
-         animation: {
+		 animation: {
         duration: 800,
         easing:   'linear',
         complete: function() {
