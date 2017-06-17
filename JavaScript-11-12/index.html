@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+ <link type="text/css" href="css/style.css" media="all" rel="stylesheet">
+<meta charset="utf-8">
+	<title>Домашнее задание №1  <%-title%> </title>
+
+
+</head>
+<body>
+<div id="counter"></div>
+
+ 
+ 
+ 
+   <!-- Lodash templates -->
+  <script type="text/template" id="questiontest">
+  <div class="body">
+<h1 class="name"> <%-name%> </h1>
+<div class="bloc_foto"> 
+
+<div class="jcarousel-wrapper">
+ <div class="jcarousel">
+    <ul>
+      
+          <% _.forEach(foto, function(images) { %>
+          <li>
+		  <img src="img/<%- images %>" alt="js and jquery">
+          </li>
+          <% }); %>
+		
+    </ul>
+</div>
+ <!-- Controls -->
+    <a class="jcarousel-prev" href="#"> ‹ </a>
+    <a class="jcarousel-next" href="#"> › </a>
+	
+</div>
+
+<p>  <%-prof%> </p>
+</div>
+<hr>
+<div class="study">
+	<p class="pname">Хочу учить фронтенд, потому что:</p>
+<ul>
+        <% _.forEach(question, function(list) { %>
+          <li>
+            <%- list %>
+          </li>
+          <% }); %>
+      </ul>
+</div>
+<hr>
+
+<div class="contacts">
+<p class="pname">Мой контактный телефон:</p>
+
+	<span> <%-tell%> </span>
+<p class="pname">Мой профиль Вконтакте:</p>	
+<div class="soc">
+	<a href="https://vk.com/ <%-vk%> " target="_blank"><img src="img/vk.gif" alt="Моя стр в вк"></a>
+</div>
+</div>
+<hr>
+
+<div class="feedback">
+	<p class="pname">Мой фидбек:</p>
+	<p><span><%- feedback %></span></p>
+</div>
+	
+</div>
+  </script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+<!--  <script src="js/handlebars-v4.0.10.js"></script>-->
+<script src="js/jquery.jcarousel.js"></script>
+<script src="js/script.js"></script>
+<!--<script src="js/jquery.carousel.js"></script>-->
+
+</body>
+</html>
