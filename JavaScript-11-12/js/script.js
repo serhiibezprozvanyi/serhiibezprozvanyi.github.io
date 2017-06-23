@@ -1,9 +1,11 @@
+
+
 (function() {
   'use strict';
 var questionnaire = {
 //	questionnaire: {
 		name: 'Безпрозванный Сергей Александрович',
-		foto: ['js-jquery.jpg', 'python-javascript.jpg', 'python-js-php-mysql-html-css.jpg'],
+		foto: ['1.jpg', '2.jpg', '3.png','4.png','5.png','6.png','7.jpg','8.jpg','9.jpg','10.png','11.png','11.png','13.png','14.png','15.png'],
 		prof: 'SEO специалист',
 		tell: '+380 (67)357-39-09',
 		vk: 'ya_boss',
@@ -22,23 +24,5 @@ var html = document.getElementById('questiontest').textContent,
 
 
 })();
-$(function() {
-	"use strict"
-    $('.jcarousel').jcarousel({
-		 animation: {
-        duration: 800,
-        easing:   'linear',
-        complete: function() {
-        }
-		
-    }
-    });
 
-    $('.jcarousel-prev').jcarouselControl({
-        target: '-=1'
-    });
 
-    $('.jcarousel-next').jcarouselControl({
-        target: '+=1'
-    });
-});

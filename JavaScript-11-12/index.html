@@ -8,6 +8,9 @@
 
 </head>
 <body>
+
+
+
 <div id="counter"></div>
 
  
@@ -17,30 +20,29 @@
   <script type="text/template" id="questiontest">
   <div class="body">
 <h1 class="name"> <%-name%> </h1>
-<div class="bloc_foto"> 
-
-<div class="jcarousel-wrapper">
- <div class="jcarousel">
-    <ul>
+<div class="bloc_foto clearfix"> 
+<div class="carousel-arrow-left"><span>Влево</span></div>
+<div class="carousel-hider">
+    <ul class="carousel-list">
       
           <% _.forEach(foto, function(images) { %>
-          <li>
+          <li  class="carousel-element">
 		  <img src="img/<%- images %>" alt="js and jquery">
           </li>
           <% }); %>
 		
     </ul>
-</div>
- <!-- Controls -->
-    <a class="jcarousel-prev" href="#"> ‹ </a>
-    <a class="jcarousel-next" href="#"> › </a>
-	
-</div>
 
-<p>  <%-prof%> </p>
+
 </div>
+	
+<div class="carousel-arrow-right"><span>Вправо</span></div>
+
+
+</div>
+<p>  <%-prof%> </p>
 <hr>
-<div class="study">
+<div class="study clearfix">
 	<p class="pname">Хочу учить фронтенд, потому что:</p>
 <ul>
         <% _.forEach(question, function(list) { %>
@@ -74,9 +76,9 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
 <!--  <script src="js/handlebars-v4.0.10.js"></script>-->
-<script src="js/jquery.jcarousel.js"></script>
-<script src="js/script.js"></script>
-<!--<script src="js/jquery.carousel.js"></script>-->
+<!--<script src="js/jquery.jcarousel.js"></script>-->
 
+<script src="js/jquery.carousel.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

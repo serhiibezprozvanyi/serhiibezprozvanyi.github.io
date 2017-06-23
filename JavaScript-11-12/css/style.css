@@ -174,3 +174,70 @@ ul{
     opacity: 1;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
 }
+
+
+.carousel-block {
+  margin-left: 25%;
+}
+
+.carousel-hider {
+    width: 350px;
+    overflow: hidden;
+    float: left;
+}
+
+.carousel-list {
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+}
+
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+
+.carousel-element img {
+    max-width: 100px;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.carousel-arrow-left {
+    margin-right: 24px;
+    margin-top: 28px;
+}
+
+.carousel-arrow-right {
+    margin-left: 25px;
+    margin-top: 28px;
+}
+
+img{
+	height: 50px;
+}
+.clearfix::after{
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
