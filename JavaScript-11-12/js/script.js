@@ -1,4 +1,6 @@
-
+$(function(){
+  $('.carousel-arrow-left').carousel();
+});
 
 (function() {
   'use strict';
