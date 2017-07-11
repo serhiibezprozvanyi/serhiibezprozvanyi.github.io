@@ -14,7 +14,7 @@
 <div id="counter">
 
 </div>
-<input id="buttons" type="button" onclick="checkingResult()" value="Отправить"  />
+<input id="buttons" type="button"  value="Отправить"  />
 </form>
 
 
@@ -24,7 +24,7 @@
 	<ul>
 	<% _.forEach(answers, function(answerSeo, i) { %>
           <li  class="carousel-element">
-		<label><input type="radio" name="<%-idQ%>" id="<%-i%>" onClick="optionAnswer(name, id)" > <%- answerSeo %></label>
+		<label><input type="radio" name="<%-idQ%>" id="<%-i%>" onclick="optionAnswer(name, id)" > <%- answerSeo %></label>
           </li>
           <% }); %>
 	

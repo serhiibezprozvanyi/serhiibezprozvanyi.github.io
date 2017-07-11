@@ -49,7 +49,8 @@ myAnswers = [];
 var testResults = [];
 
 
-function checkingResult(){
+
+buttons.onclick = function checkingResult(){
 	 
 	for (var i =0; i < myAnswers.length ;i++){
 		
@@ -62,14 +63,16 @@ function checkingResult(){
 	
 	alert("Результаты теста: \n Вы ответили правильно на  "+ correctQ+ " Вопрос");
 	clearForm("questionTestSeo");
-}
-function clearForm(name) {
-   var f = document.forms[name];
-   for(var i = 0; i < f.elements.length; ++i) {
-    if(f.elements[i].checked){
-        f.elements[i].checked = false;
-}
-}
+	
+};
+function clearForm() {
+//   var f = document.forms[name];
+//   for(var i = 0; i < f.elements.length; ++i) {
+//    if(f.elements[i].checked){
+//        f.elements[i].checked = false;
+//}
+//}
+	document.getElementById("seotest").reset();
 	correctQ = 0;
 	myAnswers = [];
 }
