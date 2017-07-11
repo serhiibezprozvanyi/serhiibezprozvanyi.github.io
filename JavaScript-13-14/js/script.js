@@ -33,19 +33,7 @@ localStorage.setItem('questions', JSON.stringify(questions));
 localStorage.getItem('questions');
 
 
-
-
-//var html = document.getElementById('questionseo').textContent.trim();
-//var counter = document.getElementById("counter");
-//var compiled = _.template(tmpl);
-//
-//
-//	for (var i = 0; i < questions.length; i++) {
-//	counter.innerHTML += compiled(questions[i].answers);
-//}
-//	
 var correctQ = 0;
-//var incorrect = 0;
 var myAnswers = new Array;
 var html = document.getElementById("questionseo").textContent.trim();
 var counter = document.getElementById("counter");
@@ -61,7 +49,6 @@ myAnswers = [];
 var testResults = [];
 
 
-//optionAnswer(0,3);
 function checkingResult(){
 	 
 	for (var i =0; i < myAnswers.length ;i++){
@@ -69,10 +56,7 @@ function checkingResult(){
 		console.log('Правильній ответ: ' + questions[i].correctAnswer);
 		if(myAnswers[i] == questions[i].correctAnswer){
 			correctQ += 1;
-			
-//			console.log("Ответ: " + questions[i].text +  " Верный");
-		}
-		
+		}	
 	}
 	
 	
@@ -86,4 +70,6 @@ function clearForm(name) {
         f.elements[i].checked = false;
 }
 }
+	correctQ = 0;
+	myAnswers = [];
 }
