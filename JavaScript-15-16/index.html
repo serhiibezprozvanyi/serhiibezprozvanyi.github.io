@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+ <link type="text/css" href="css/style.css" media="all" rel="stylesheet">
+<meta charset="utf-8">
+	<title>Домашнее задание 15-16  </title>
+
+
+</head>
+<body>
+
+
+
+
+
+
+<input type="text"  id="searchKeywords" >
+<button id="say">Найти</button>
+
+  <div id="container"></div>  
+
+
+ <script type="text/foto" id="templateFoto">
+    <div class="foto">
+    <ul class="foto-item">
+      <% _.forEach (hits, function(item) { %>
+        <li>
+          
+		  <a href="<%- item.webformatURL %>">
+            <img src="<%- item.previewURL %>">
+          </a>
+        </li>
+        <%});%>
+		</ul>
+    </div>
+  </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>	
+<script src="js/script.js"></script>
+ 
+</body>
+</html>

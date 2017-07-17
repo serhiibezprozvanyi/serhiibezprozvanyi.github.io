@@ -1,0 +1,19 @@
+.foto-item{
+    list-style-type: none;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    }
+.foto-item li{
+    
+padding: 10px;
+}
+.foto{
+width:  100%;
+}
+
+img{
+   width: 150px;
+   height: 150px;
+}
+
