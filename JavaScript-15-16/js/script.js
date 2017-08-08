@@ -5,28 +5,21 @@ var htmlTemplate = document.getElementById('templateFoto').textContent;
 
 
 
-function say_hi() {
+function fetchImages() {
 var searchValue = document.getElementById('searchKeywords').value;
 var keywords = searchValue;
 var URL = "https://pixabay.com/api/?key="+api+"&q="+encodeURIComponent(keywords)+"&image_type=photo"; 
     
-fetch(URL)  
-  .then(  
-    function(response) {  
-      if (response.status !== 200) {  
-        
-        return;  
+fetch(URL).then(function(response) {  
+      if (response.ok) {    
+        return response.json(); 
       }
-
-      response.json().then(function(data) {  
+  }).then(function(data) {  
         console.log(data); 
 		  var templateAPI = _.template(htmlTemplate);
     		parent.innerHTML = templateAPI(data);
-      });  
-    }  
-  )  
-  .catch(function(err) {  
-    console.log('Fetch Error :-S', err);  
+      }).catch(function(err) {  
+    console.log('Fetch Error :', err);  
   });
 	
 	
@@ -34,6 +27,6 @@ fetch(URL)
 
 }
  
-document.getElementById('say').addEventListener('click', say_hi);
+document.getElementById('searhImages').addEventListener('click', fetchImages);
 
 
