@@ -1,0 +1,158 @@
+
+@media (min-width: 320px) and (max-width: 479px) {
+	*{
+	margin: 0 auto;
+	padding: 0;
+/* 	box-sizing: border-box; */
+}
+	ul{
+		list-style-type: none;
+	}
+  .container {
+    max-width: 479px;
+  }
+  .header {
+  margin: 0 auto;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../img/backroundHeader.png");
+  background-position: center;
+  height: 479px;
+}
+.btnLogSign{
+	font-family: Montserrat,serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: transparent;
+    outline-style: none;
+}
+.btnLogSign:hover{
+	border: 2px solid #ffffff;
+    cursor: pointer; 
+}
+.box-SignLog{
+	margin: auto; 	
+ 	width: 200px; 
+    padding: 10px; 
+	}
+	   
+.box-headName{
+	width: 320px; 
+	margin: auto;
+	text-align:center;
+	color:white;		
+	}
+.box-headName h3{
+	font-size:30px;
+
+	text-transform: uppercase;
+	}
+.box-headName h6{
+	font-weight:normal;
+	font-size:22px;
+}
+
+.box-headName button {
+    width: 260px;
+    height: 38px;
+    background-color: #ff4e50;
+    font-family: Montserrat,serif;
+	font-weight: bolder;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 20px;
+    border: #ff4e50;
+	cursor: pointer; 
+}	
+	
+
+.main{
+	margin: 0;
+	padding: 0;
+}	
+
+.galary {
+/*
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+*/
+  width: 100%;
+  height: 652px; }
+  
+
+
+	
+/*
+.galary .wrapSlider .containerSlider ul {
+        width: 100%;
+        height: 100%; }
+.galary .wrapSlider .containerSlider ul li img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px; }
+*/
+/* .wrapSlider{
+      margin-top: 20px;
+      height: 740px;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      align-items: center;
+	} */
+/* .containerSlider{
+        position: relative;
+        width: 95%;
+        height:32%;
+	} */
+ .containerSlider ul{
+          
+	}
+ .containerSlider li{
+	 
+	}
+  .containerSlider img {
+
+            }
+     
+/*
+	.slide{   
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: opacity 1s;
+	
+	}
+*/
+	.showing {
+    opacity: 1;
+    z-index: 2;
+}
+	
+	.promo {
+		padding-top:60px;
+	}
+
+	.promo a{
+		color: white;
+		font-size:20px;
+		text-decoration: none;
+	}
+	
+
+ 
+
+  }
+
+ 
+  

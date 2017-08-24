@@ -1,0 +1,310 @@
+	*{
+	margin: 0 auto;
+	padding: 0;
+	/* box-sizing: border-box; */
+}
+	ul{
+		list-style-type: none;
+	}
+
+.logo{
+
+padding-top: 10px;
+}
+.logo a{
+	
+color:white;
+	
+text-decoration:none;
+	
+margen-top: 35px;
+}
+  .container {
+    max-width: 479px;
+  }
+
+.inner {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 940px;
+    text-align: center;
+}
+
+.galary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 652px;
+}
+
+  .header {
+  margin: 0 auto;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../img/backroundHeader.png");
+  background-position: center;
+  height: 479px;
+}
+.btnLogSign{
+	font-family: Montserrat,serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: transparent;
+    outline-style: none;
+}
+.btnLogSign:hover{
+	border: 2px solid #ffffff;
+    cursor: pointer; 
+}
+.box-SignLog{
+	/* margin: auto; */
+	/* width: 200px; */
+	/* padding: 10px; */
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	}
+	   
+.box-headName{
+	    padding-top: 90px;
+/*	width: 320px; */
+	margin: auto;
+	text-align:center;
+	color:white;		
+	}
+.box-headName h3{
+	font-size:30px;
+
+	text-transform: uppercase;
+	}
+.box-headName h6{
+	font-weight: normal;
+    font-size: 22px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.box-headName button {
+    width: 260px;
+    height: 38px;
+    background-color: #ff4e50;
+    font-family: Montserrat,serif;
+	font-weight: bolder;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 20px;
+    border: #ff4e50;
+	cursor: pointer; 
+}	
+	
+
+.main{
+	
+}	
+
+.galary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 652px;
+}
+  .galary .wrapSlider {
+    margin-top: 35px;
+    width: 100%;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.galary .wrapSlider .containerSlider {
+    position: relative;
+    width: 32%;
+    height: 100%;
+}
+
+
+.galary .wrapSlider .containerSlider ul {
+        width: 100%;
+        height: 100%; }
+.galary .wrapSlider .containerSlider ul li img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          /* z-index: 9; */
+          }
+
+.wrapSlider{
+      margin-top: 20px;
+      height: 740px;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      align-items: center;
+	}
+.containerSlider{
+        position: relative;
+        width: 95%;
+        height:32%;
+	}
+
+
+
+.socials {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 1%; }
+.socials h5 {
+    width: 100%;
+    text-align: center;
+    font-family: Montserrat, serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #333333; }
+.socials .wrapFigure {
+    margin-top: 36px;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center; }
+.socials .wrapFigure figure {
+      width: 24%;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: center; }
+.socials .wrapFigure figure div {
+        position: relative;
+        width: 120px;
+        height: 120px; }
+.socials .wrapFigure figure div img {
+          width: 120px;
+          height: 120px;
+          border-radius: 100%; }
+.socials .wrapFigure figure div i {
+          position: absolute;
+          top: 85px;
+          left: 85px;
+          border: 4px solid #ffffff;
+          z-index: 25;
+          width: 40px;
+          height: 40px;
+          font-size: 20px;
+          color: white;
+          border-radius: 120%;
+          display: flex;
+          flex-flow: row;
+          justify-content: center;
+          align-items: center; }
+.socials .wrapFigure figure div .icon-paper-plane {
+          background-color: #4e73db; }
+.socials .wrapFigure figure div .icon-beaker {
+          background-color: #ffa507; }
+.socials .wrapFigure figure div .icon-monitor {
+          background-color: #ff4e50; }
+.socials .wrapFigure figure div .icon-coffee {
+          background-color: #1cd7ad; }
+.socials .wrapFigure figure .figCapt {
+        margin-top: 16px;
+        width: 100%;
+        text-align: center;
+        font-family: Montserrat, serif;
+        font-weight: bold;
+        font-size: 14px;
+        color: #333333; }
+.socials .wrapFigure figure h6 {
+        width: 100%;
+        text-align: center;
+        font-family: Roboto, serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        color: #666666; }
+.socials h3 {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center; }
+.socials h3 button {
+      width: 190px;
+      height: 40px;
+      outline: none;
+      border-radius: 20px;
+      border: 2px solid #ff4e50;
+      background-color: transparent;
+      text-align: center;
+      font-family: Montserrat, serif;
+      font-weight: bold;
+      font-size: 14px;
+      color: #ff4e50; }
+.socials h3 button:hover {
+        cursor: pointer; }
+
+
+
+ .controls i {
+    font-size: 60px;
+    color: #1b1a1a;
+    opacity: .5;
+    display: block;
+}
+.btnsControll {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+.icon-right-open-big:before {
+    content: "\e805";
+}
+.icon-left-open-big:before {
+    content: "\e804";
+}
