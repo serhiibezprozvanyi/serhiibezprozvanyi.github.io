@@ -226,3 +226,13 @@ article {
     -ms-flex-align: center;
     align-items: center;
 }
+
+.galary h5 {
+    margin-top: 98px;
+    width: 100%;
+    text-align: center;
+    font-family: Montserrat,serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #333;
+}

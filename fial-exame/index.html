@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<title>Fial exame</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,18 +10,55 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/slider.css">
   <script src="https://use.fontawesome.com/5284116899.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-	</script>
-	<script src="js/jquery.jcarousel.js"></script>
 
 
-	
-
-  <title>Fial exame</title>
+  
 
 </head>
 <body class="page">
+<script type="text/template" id="template-Slider-L">
+	<% for (var i = 0;i < myDataL.length ; i++){ %>
+        <li class="slide">
+        <img src="<%= myDataL[i].src[0] %>" alt="js and jquery"> 
+        
+        <article class="article">
+					  <span>  <button class="btnStep"> step1 </button></span>
+					  <h3><%= myDataL[i].title  %></h3>
+					  <p><%= myDataL[i].text  %></p>
+		</article>
+   
+        </li>  
+        <%};%>
+</script>
+	
+<script type="text/template" id="template-Slider-C">
+	<% for (var i = 0;i < myDataC.length ; i++){ %>
+        <li class="slide">
+        <img src="<%= myDataC[i].src[0] %>" alt="js and jquery"> 
+        
+        <article class="article">
+					  <span>  <button class="btnStep"> step1 </button></span>
+					  <h3><%= myDataC[i].title  %></h3>
+					  <p><%= myDataC[i].text  %></p>
+		</article>
+   
+        </li>  
+        <%};%>
+</script>
+<script type="text/template" id="template-Slider-R">
+	<% for (var i = 0;i < myDataR.length ; i++){ %>
+        <li class="slide">
+        <img src="<%= myDataR[i].src[0] %>" alt="js and jquery"> 
+        
+        <article class="article">
+					  <span>  <button class="btnStep"> step1 </button></span>
+					  <h3><%= myDataR[i].title  %></h3>
+					  <p><%= myDataR[i].text  %></p>
+		</article>
+   
+        </li>  
+        <%};%>
+</script>
 <header class="header">
   <div class="box-header inner">
     <nav class="nav-header">
@@ -39,156 +77,39 @@
       <button>Find your holiday partner</button>
     </div>
   </div>
-
 </header>
 <main class="main">
 	<div class="box-main inner">
-		
-<section class="galary">
-<div class="wrapSlider">
-<div class="jcarousel-wrapper">
- <div class="jcarousel">
-    <ul>
-        <li class="slide">
-        <img src="img/1.jpg" alt="js and jquery"> 
-        
-        <article class="article">
-					  <span>  <button class="btnStep"> step1 </button></span>
-					  <h3>Morbi velit risus</h3>
-					  <p>The latest news, business, sport, comment, lifestyle and culture. Content from the Daily Telegraph and Sunday Telegraph newspapers </p>
-		</article>
-
-        
-        </li>
-        
-          <li class="slide">
-        <img src="img/2.jpg" alt="js and jquery"> 
-        
-        <article class="article">
-					  <span>  <button class="btnStep"> step2 </button></span>
-					  <h3>Morbi velit risus</h3>
-					  <p>The latest news, business, sport, comment, lifestyle and culture. Content from the Daily Telegraph and Sunday Telegraph newspapers </p>
-		</article>
-
-        
-        </li>
-          <li class="slide">
-        <img src="img/3.jpg" alt="js and jquery"> 
-        
-        <article class="article">
-					  <span><button class="btnStep"> step3 </button></span>
-					  <h3>Morbi velit risus</h3>
-					  <p>The latest news, business, sport, comment, lifestyle and culture. Content from the Daily Telegraph and Sunday Telegraph newspapers </p>
-		</article>
-
-        
-        </li>
-		
-        
-    </ul>
-</div>
- <!-- Controls -->
-    <a class="jcarousel-prev" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
-    <a class="jcarousel-next" href="#"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
-	<script src="js/script.js"></script>
-</div>
-
-
-<div class="jcarousel-wrapper">
- <div class="jcarousel">
-    <ul>
-        <li class="slide">
-        <img src="img/4.jpg" alt="js and jquery"> 
-        
-        <article class="article">
-					  <span><button class="btnStep"> step1 </button></span>
-					  <h3>Morbi velit risus</h3>
-					  <p>The latest news, business, sport, comment, lifestyle and culture. Content from the Daily Telegraph and Sunday Telegraph newspapers </p>
-		</article>
-
-        
-        </li>
-        
-          <li class="slide">
-        <img src="img/5.jpg" alt="js and jquery"> 
-        
-        <article class="article">
-					 <span> <button class="btnStep"> step2 </button></span>
-					  <h3>Morbi velit risus</h3>
-					  <p>The latest news, business, sport, comment, lifestyle and culture. Content from the Daily Telegraph and Sunday Telegraph newspapers </p>
-		</article>
-
-        
-        </li>  <li class="slide">
-        <img src="img/6.jpg" alt="js and jquery"> 
-        
-        <article class="article">
-					 <span> <button class="btnStep"> step3 </button></span>
-					  <h3>Morbi velit risus</h3>
-					  <p>The latest news, business, sport, comment, lifestyle and culture. Content from the Daily Telegraph and Sunday Telegraph newspapers </p>
-		</article>
-
-        
-        </li>
-    </ul>
-</div>
- <!-- Controls -->
-    <a class="jcarousel-prev" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
-    <a class="jcarousel-next" href="#"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
-	<script src="js/script.js"></script>
-</div>
-
-
-
-<div class="jcarousel-wrapper">
- <div class="jcarousel">
-    <ul>
-        <li class="slide">
-        <img src="img/7.jpg" alt="js and jquery"> 
-        
-        <article class="article">
-				<span>	  <button class="btnStep"> step1 </button></span>
-					  <h3>Morbi velit risus</h3>
-					  <p>The latest news, business, sport, comment, lifestyle and culture. Content from the Daily Telegraph and Sunday Telegraph newspapers </p>
-		</article>
-
-        
-        </li>
-  <li class="slide">
-        <img src="img/8.jpg" alt="js and jquery"> 
-        
-        <article class="article">
-					<span>  <button class="btnStep"> step2 </button></span>
-					  <h3>Morbi velit risus</h3>
-					  <p>The latest news, business, sport, comment, lifestyle and culture. Content from the Daily Telegraph and Sunday Telegraph newspapers </p>
-		</article>
-
-        
-        </li>
-          <li class="slide">
-        <img src="img/9.jpg" alt="js and jquery"> 
-        
-        <article class="article">
-					 <span> <button class="btnStep"> step3 </button></span>
-					  <h3>Morbi velit risus</h3>
-					  <p>The latest news, business, sport, comment, lifestyle and culture. Content from the Daily Telegraph and Sunday Telegraph newspapers </p>
-		</article>
-
-        
-        </li>
-        
-        
-        
-        
-    </ul>
-</div>
- <!-- Controls -->
-    <a class="jcarousel-prev" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
-    <a class="jcarousel-next" href="#"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
-	<script src="js/script.js"></script>
-</div>
-	</div>
-</section>
+		<section class="galary">
+			<h5>How Urlaubsglück works?</h5>
+			<div class="wrapSlider">
+			<!-- slider left -->
+				<div class="jcarousel-wrapper">
+					<div class="jcarousel">
+					  <ul id="template-Slider-ulL"></ul>
+					</div>
+					<a class="jcarousel-prev" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
+					<a class="jcarousel-next" href="#"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+				</div>
+			<!-- slider center -->
+				<div class="jcarousel-wrapper">
+					<div class="jcarousel">
+							<ul id="template-Slider-ulC"></ul>
+					</div>
+					<a class="jcarousel-prev" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
+					<a class="jcarousel-next" href="#"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+				</div>
+			<!-- slider right -->
+				<div class="jcarousel-wrapper">
+					<div class="jcarousel">
+					  <ul id="template-Slider-ulR"></ul>
+					</div>
+				 
+					<a class="jcarousel-prev" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
+					<a class="jcarousel-next" href="#"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+				</div>
+			</div>
+		</section>
 		<section class="socials">
       <h5>Meet a partner for your best holiday</h5>
       <div class="wrapFigure">
@@ -227,7 +148,11 @@
 
 </footer>
 
-<script src="js/script_slider.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+<script src="js/jquery.jcarousel.js"></script>
+<script src="js/script_db.js"></script>
+	<script src="js/slider.js"></script>
 
 </body>
 </html>
